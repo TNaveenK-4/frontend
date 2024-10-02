@@ -49,7 +49,7 @@ const CustomerForm = () => {
 
         else {
             console.log(values)
-            fetch("http://3.133.149.41:8080/customer/customerDetails",{
+            fetch("http://172.31.13.28:8080/customer/customerDetails",{
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
                 body:JSON.stringify(values)                
