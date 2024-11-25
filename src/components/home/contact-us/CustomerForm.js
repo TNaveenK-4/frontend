@@ -38,7 +38,7 @@ const CustomerForm = () => {
         else {
             console.log(values)
 
-            fetch("https://backend.hyderabad-packers-movers.in/customer/customerDetails",{
+            fetch("/customer/customerDetails",{
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
                 body:JSON.stringify(values)                
